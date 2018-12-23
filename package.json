@@ -1,0 +1,13 @@
+{
+  "name": "prime-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@primecms/core": "^0.2.2",
+    "@primecms/ui": "^0.2.2"
+  },
+  "scripts": {
+    "start":"primecms start"
+  }
+}

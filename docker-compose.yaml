@@ -1,0 +1,17 @@
+version: "3"
+services:
+    postgres:
+      image: postgres
+      ports:
+      - "5432:5432"
+      environment:
+      - "POSTGRES_DB=prime-sq"
+      - "POSTGRES_PASSWORD=dalong"
+    prime:
+      build: ./
+      ports:
+      - "4000:4000"
+      environment:
+      - "DATABASE_URL=postgresql://postgres:dalong@postgres:5432/prime-sq"
+      - "SESSION_SECRET=dalongdemo"
+
